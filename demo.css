@@ -1,0 +1,22 @@
+:root {
+    --key-width: 40px;
+    --key-height: var(--key-width);
+}
+
+.keyboard-layout-row {
+    width: calc(var(--key-width) * 23);
+}
+
+.keyboard-layout-key {
+    --key-rel-offset: 0;
+    --key-rel-width: 1;
+    display: inline-block;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: calc(var(--key-rel-offset) * var(--key-width));
+    width: calc(var(--key-rel-width) * var(--key-width) - 2px);
+    height: var(--key-height);
+}
